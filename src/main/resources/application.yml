@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.1.150:3306/devops_guilin?serverTimezone=UTC&useSSL=false&allowPublickeyRetrieval=true
+    username: root
+    password: '!QAZxsw2'
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  type-aliases-package: com.example.demo.mapper
+server:
+  port: 8084
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
